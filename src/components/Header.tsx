@@ -22,7 +22,7 @@ const Header = () => {
     }
   };
   return <>
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "h-16 bg-primary/95 backdrop-blur-md shadow-medium" : "h-24 bg-primary"}`}>
+      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "h-16 bg-background/95 backdrop-blur-md shadow-medium" : "h-24 bg-background"}`}>
         <nav className="container mx-auto px-4 h-full flex items-center justify-between">
           <div className="flex items-center">
             <img alt="FASUL Educacional EAD - Logo" className="h-auto max-h-12" src="/lovable-uploads/29965eaa-1b07-4fbb-8ddf-889789db41c0.png" />
@@ -30,28 +30,16 @@ const Header = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            <button 
-              onClick={() => scrollToSection("cursos")} 
-              className="text-primary-foreground hover:text-accent transition-colors font-medium py-2"
-            >
+            <button onClick={() => scrollToSection("cursos")} className="relative text-primary-foreground hover:text-accent transition-colors font-medium after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-accent after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
               Cursos
             </button>
-            <button 
-              onClick={() => scrollToSection("como-funciona")} 
-              className="text-primary-foreground hover:text-accent transition-colors font-medium py-2"
-            >
+            <button onClick={() => scrollToSection("como-funciona")} className="relative text-primary-foreground hover:text-accent transition-colors font-medium after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-accent after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
               Como Funciona
             </button>
-            <button 
-              onClick={() => scrollToSection("depoimentos")} 
-              className="text-primary-foreground hover:text-accent transition-colors font-medium py-2"
-            >
+            <button onClick={() => scrollToSection("depoimentos")} className="relative text-primary-foreground hover:text-accent transition-colors font-medium after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-accent after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
               Depoimentos
             </button>
-            <button 
-              onClick={() => scrollToSection("faq")} 
-              className="text-primary-foreground hover:text-accent transition-colors font-medium py-2"
-            >
+            <button onClick={() => scrollToSection("faq")} className="relative text-primary-foreground hover:text-accent transition-colors font-medium after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-accent after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
               FAQ
             </button>
           </div>
@@ -62,7 +50,7 @@ const Header = () => {
             </Button>
 
             {/* Mobile Menu Button */}
-            <button className="md:hidden text-primary-foreground" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} aria-label="Toggle menu">
+            <button className="md:hidden text-foreground" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} aria-label="Toggle menu">
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
@@ -70,18 +58,18 @@ const Header = () => {
       </header>
 
       {/* Mobile Menu */}
-      {isMobileMenuOpen && <div className="fixed inset-0 z-40 bg-primary pt-24 md:hidden">
+      {isMobileMenuOpen && <div className="fixed inset-0 z-40 bg-background pt-24 md:hidden">
           <div className="container mx-auto px-4 flex flex-col gap-4">
-            <button onClick={() => scrollToSection("cursos")} className="text-left text-lg font-medium py-3 border-b border-primary-foreground/20 text-primary-foreground hover:text-accent transition-colors">
+            <button onClick={() => scrollToSection("cursos")} className="text-left text-lg font-medium py-3 border-b border-border">
               Cursos
             </button>
-            <button onClick={() => scrollToSection("como-funciona")} className="text-left text-lg font-medium py-3 border-b border-primary-foreground/20 text-primary-foreground hover:text-accent transition-colors">
+            <button onClick={() => scrollToSection("como-funciona")} className="text-left text-lg font-medium py-3 border-b border-border">
               Como Funciona
             </button>
-            <button onClick={() => scrollToSection("depoimentos")} className="text-left text-lg font-medium py-3 border-b border-primary-foreground/20 text-primary-foreground hover:text-accent transition-colors">
+            <button onClick={() => scrollToSection("depoimentos")} className="text-left text-lg font-medium py-3 border-b border-border">
               Depoimentos
             </button>
-            <button onClick={() => scrollToSection("faq")} className="text-left text-lg font-medium py-3 border-b border-primary-foreground/20 text-primary-foreground hover:text-accent transition-colors">
+            <button onClick={() => scrollToSection("faq")} className="text-left text-lg font-medium py-3 border-b border-border">
               FAQ
             </button>
           </div>
