@@ -8,7 +8,7 @@ import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
 const Index = () => {
   return <div className="min-h-screen">
-      <Header className="bg-[0C2039] bg-[#0c1f37]" />
+      <Header />
       <main>
         <HeroSection />
         <ObjectionsSection />
