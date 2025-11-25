@@ -22,7 +22,7 @@ const Header = () => {
     }
   };
   return <>
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "h-16 bg-background/95 backdrop-blur-md shadow-medium" : "h-24 bg-background"}`}>
+      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${isScrolled ? "h-16 bg-primary/95 backdrop-blur-md shadow-medium" : "h-24 bg-primary"}`}>
         <nav className="container mx-auto px-4 h-full flex items-center justify-between">
           <div className="flex items-center">
             <img alt="FASUL Educacional EAD - Logo" className="h-auto max-h-12" src="/lovable-uploads/29965eaa-1b07-4fbb-8ddf-889789db41c0.png" />
@@ -50,7 +50,7 @@ const Header = () => {
             </Button>
 
             {/* Mobile Menu Button */}
-            <button className="md:hidden text-foreground" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} aria-label="Toggle menu">
+            <button className="md:hidden text-primary-foreground" onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)} aria-label="Toggle menu">
               {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
@@ -58,18 +58,18 @@ const Header = () => {
       </header>
 
       {/* Mobile Menu */}
-      {isMobileMenuOpen && <div className="fixed inset-0 z-40 bg-background pt-24 md:hidden">
+      {isMobileMenuOpen && <div className="fixed inset-0 z-40 bg-primary pt-24 md:hidden">
           <div className="container mx-auto px-4 flex flex-col gap-4">
-            <button onClick={() => scrollToSection("cursos")} className="text-left text-lg font-medium py-3 border-b border-border">
+            <button onClick={() => scrollToSection("cursos")} className="text-left text-lg font-medium py-3 border-b border-primary-foreground/20 text-primary-foreground hover:text-accent transition-colors">
               Cursos
             </button>
-            <button onClick={() => scrollToSection("como-funciona")} className="text-left text-lg font-medium py-3 border-b border-border">
+            <button onClick={() => scrollToSection("como-funciona")} className="text-left text-lg font-medium py-3 border-b border-primary-foreground/20 text-primary-foreground hover:text-accent transition-colors">
               Como Funciona
             </button>
-            <button onClick={() => scrollToSection("depoimentos")} className="text-left text-lg font-medium py-3 border-b border-border">
+            <button onClick={() => scrollToSection("depoimentos")} className="text-left text-lg font-medium py-3 border-b border-primary-foreground/20 text-primary-foreground hover:text-accent transition-colors">
               Depoimentos
             </button>
-            <button onClick={() => scrollToSection("faq")} className="text-left text-lg font-medium py-3 border-b border-border">
+            <button onClick={() => scrollToSection("faq")} className="text-left text-lg font-medium py-3 border-b border-primary-foreground/20 text-primary-foreground hover:text-accent transition-colors">
               FAQ
             </button>
           </div>
