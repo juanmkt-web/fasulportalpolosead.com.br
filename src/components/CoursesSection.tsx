@@ -185,7 +185,7 @@ const CoursesSection = () => {
                     </div>)}
                 </div>
 
-                <Badge variant="outline" className="border-accent text-accent w-full justify-center bg-[#1e1e1e]">
+                <Badge variant="outline" className="border-accent text-accent w-full justify-center bg-slate-100">
                   Certificação intermediária disponível
                 </Badge>
               </div>
