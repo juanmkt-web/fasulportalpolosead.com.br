@@ -6,9 +6,11 @@ import SocialProofSection from "@/components/SocialProofSection";
 import OfferSection from "@/components/OfferSection";
 import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
+
 const Index = () => {
-  return <div className="min-h-screen">
-      <Header className="bg-gray-900 bg-[0C2039]" />
+  return (
+    <div className="min-h-screen">
+      <Header />
       <main>
         <HeroSection />
         <ObjectionsSection />
@@ -18,6 +20,8 @@ const Index = () => {
         <FAQSection />
       </main>
       <Footer />
-    </div>;
+    </div>
+  );
 };
+
 export default Index;
