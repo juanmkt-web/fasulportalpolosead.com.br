@@ -30,16 +30,28 @@ const Header = () => {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            <button onClick={() => scrollToSection("cursos")} className="relative text-primary-foreground hover:text-accent transition-colors font-medium after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-accent after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
+            <button 
+              onClick={() => scrollToSection("cursos")} 
+              className="text-primary-foreground hover:text-accent transition-colors font-medium py-2"
+            >
               Cursos
             </button>
-            <button onClick={() => scrollToSection("como-funciona")} className="relative text-primary-foreground hover:text-accent transition-colors font-medium after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-accent after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
+            <button 
+              onClick={() => scrollToSection("como-funciona")} 
+              className="text-primary-foreground hover:text-accent transition-colors font-medium py-2"
+            >
               Como Funciona
             </button>
-            <button onClick={() => scrollToSection("depoimentos")} className="relative text-primary-foreground hover:text-accent transition-colors font-medium after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-accent after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
+            <button 
+              onClick={() => scrollToSection("depoimentos")} 
+              className="text-primary-foreground hover:text-accent transition-colors font-medium py-2"
+            >
               Depoimentos
             </button>
-            <button onClick={() => scrollToSection("faq")} className="relative text-primary-foreground hover:text-accent transition-colors font-medium after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-accent after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left">
+            <button 
+              onClick={() => scrollToSection("faq")} 
+              className="text-primary-foreground hover:text-accent transition-colors font-medium py-2"
+            >
               FAQ
             </button>
           </div>
