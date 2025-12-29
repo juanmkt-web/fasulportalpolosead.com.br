@@ -1,4 +1,5 @@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { ChevronUp } from "lucide-react";
 
 const FAQSection = () => {
   const faqs = [
@@ -27,9 +28,12 @@ const FAQSection = () => {
   return (
     <section id="faq" className="py-12 md:py-16" style={{ background: 'linear-gradient(to bottom right, #192F45, #0066cc)' }}>
       <div className="container mx-auto px-4 max-w-4xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">
-          Perguntas Frequentes sobre a Graduação EAD na FASUL
-        </h2>
+        <div className="flex flex-col items-center mb-8">
+          <ChevronUp className="w-10 h-10 text-white mb-4" />
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-white">
+            Perguntas Frequentes sobre a Graduação EAD na FASUL
+          </h2>
+        </div>
 
         <Accordion type="single" collapsible className="space-y-4">
           {faqs.map((faq, index) => (
