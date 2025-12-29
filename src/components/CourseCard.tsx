@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Gift } from "lucide-react";
 
 interface Course {
   title: string;
@@ -13,6 +14,7 @@ interface Course {
   isLaunchingSoon?: boolean;
   image: string;
   url: string;
+  promoBadge?: string;
 }
 
 interface CourseCardProps {
@@ -33,7 +35,7 @@ const CourseCard = ({ course, index }: CourseCardProps) => {
           alt={course.title}
           className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
         />
-        {/* Badges */}
+        {/* Top Badges */}
         <div className="absolute top-3 left-3">
           {course.isLaunchingSoon ? (
             <span className="bg-accent text-white text-xs font-bold px-3 py-1.5 rounded-full">
@@ -44,6 +46,14 @@ const CourseCard = ({ course, index }: CourseCardProps) => {
               {course.badge}
             </span>
           ) : null}
+        </div>
+        
+        {/* Promo Badge - Bottom of image */}
+        <div className="absolute bottom-0 left-0 right-0 flex justify-center pb-3">
+          <div className="bg-gradient-to-r from-amber-400 to-orange-500 text-white text-[10px] md:text-xs font-bold px-3 py-2 rounded-full flex items-center gap-1.5 shadow-lg">
+            <Gift className="w-3.5 h-3.5" />
+            <span>GANHE 2 PÓS PARA VOCÊ + 1 PARA SEU AMIGO</span>
+          </div>
         </div>
       </div>
 
