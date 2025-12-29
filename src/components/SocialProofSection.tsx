@@ -27,14 +27,14 @@ const SocialProofSection = () => {
     image: testimonial3,
     rating: 5
   }];
-  return <section id="depoimentos" className="py-16 md:py-24 bg-background">
+  return <section id="depoimentos" className="py-12 md:py-16 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-foreground">
           Por Que Escolher a FASUL Educacional? Credibilidade e Nota Máxima Comprovadas.
         </h2>
 
         {/* MEC Seal Highlight */}
-        <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-16 p-8 bg-gradient-card rounded-2xl shadow-medium">
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-10 p-6 bg-gradient-card rounded-2xl shadow-medium">
           <img src={mecSeal} alt="Selo Nota Máxima 5 MEC" className="w-32 h-32 md:w-40 md:h-40 animate-float" />
           <div className="text-center md:text-left">
             <h3 className="text-2xl font-bold text-primary mb-2">
@@ -49,7 +49,7 @@ const SocialProofSection = () => {
         </div>
 
         {/* Trust Badges */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
           <Card className="p-6 text-center bg-card border-border">
             <Award className="w-12 h-12 text-accent mx-auto mb-3" />
             <h4 className="font-semibold text-lg mb-2">Nota 5 MEC</h4>

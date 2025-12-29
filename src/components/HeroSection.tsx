@@ -12,7 +12,7 @@ const HeroSection = () => {
     }
   };
   return (
-    <section className="relative min-h-screen pt-32 pb-16 md:pt-40 md:pb-24 overflow-hidden bg-gradient-hero">
+    <section className="relative min-h-screen pt-24 pb-12 md:pt-32 md:pb-16 overflow-hidden bg-gradient-hero">
       {/* Background Image with Overlay */}
       <div className="absolute inset-0 z-0">
         <img
@@ -68,7 +68,7 @@ const HeroSection = () => {
         </div>
 
         {/* Trust Badges Row */}
-        <div className="mt-16 pt-8 border-t border-white/20">
+        <div className="mt-10 pt-6 border-t border-white/20">
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center justify-items-center">
             <div className="flex flex-col items-center gap-2 text-white/90 animate-fade-in animate-stagger-1">
               <Award className="w-8 h-8 text-accent" />

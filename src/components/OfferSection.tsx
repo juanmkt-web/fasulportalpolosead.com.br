@@ -87,7 +87,7 @@ const OfferSection = () => {
     }
   };
   const isUrgent = timeLeft.hours === 0 && timeLeft.minutes < 60;
-  return <section id="oferta" className="py-16 md:py-24 bg-gradient-hero text-white">
+  return <section id="oferta" className="py-12 md:py-16 bg-gradient-hero text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Aproveite a Maior Campanha de Bolsas para sua Graduação a Distância!</h2>
@@ -97,7 +97,7 @@ const OfferSection = () => {
         </div>
 
         {/* Countdown Timer */}
-        <div className={`flex justify-center gap-4 mb-12 ${isUrgent ? "animate-pulse" : ""}`}>
+        <div className={`flex justify-center gap-4 mb-8 ${isUrgent ? "animate-pulse" : ""}`}>
           <div className="bg-accent text-accent-foreground rounded-lg p-4 min-w-[80px] text-center py-[16px] px-[16px]">
             <div className="text-3xl md:text-4xl font-bold mx-0 my-0 py-0">
               {String(timeLeft.hours).padStart(2, "0")}
