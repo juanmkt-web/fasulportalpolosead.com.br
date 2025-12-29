@@ -203,7 +203,7 @@ const CoursesSection = () => {
       {/* SVG Wave Top */}
       <div className="absolute top-0 left-0 w-full overflow-hidden leading-none rotate-180">
         <svg
-          className="relative block w-full h-16 md:h-24"
+          className="relative block w-full h-16 md:h-24 rotate-180"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
