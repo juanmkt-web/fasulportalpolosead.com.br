@@ -233,7 +233,7 @@ const CoursesSection = () => {
         </svg>
       </div>
 
-      <div className="py-14 md:py-20" style={{ background: 'linear-gradient(135deg, #192F45 0%, #0066cc 50%, #192F45 100%)' }}>
+      <div className="py-14 md:py-20" style={{ background: 'linear-gradient(to bottom right, #192F45 0%, #0066cc 100%)' }}>
         <div className="container mx-auto px-4">
           {/* Header */}
           <div className="text-center mb-8">
