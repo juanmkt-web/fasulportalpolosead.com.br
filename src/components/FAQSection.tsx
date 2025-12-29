@@ -25,19 +25,19 @@ const FAQSection = () => {
   ];
 
   return (
-    <section id="faq" className="py-12 md:py-16 bg-background">
+    <section id="faq" className="py-12 md:py-16" style={{ background: 'linear-gradient(to bottom right, #192F45, #0066cc)' }}>
       <div className="container mx-auto px-4 max-w-4xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-foreground">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">
           Perguntas Frequentes sobre a Graduação EAD na FASUL
         </h2>
 
         <Accordion type="single" collapsible className="space-y-4">
           {faqs.map((faq, index) => (
-            <AccordionItem key={index} value={`item-${index}`} className="bg-card border border-border rounded-lg px-6">
-              <AccordionTrigger className="text-left font-semibold text-foreground hover:text-primary">
+            <AccordionItem key={index} value={`item-${index}`} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg px-6">
+              <AccordionTrigger className="text-left font-semibold text-white hover:text-white/80">
                 {faq.question}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground">{faq.answer}</AccordionContent>
+              <AccordionContent className="text-white/80">{faq.answer}</AccordionContent>
             </AccordionItem>
           ))}
         </Accordion>
