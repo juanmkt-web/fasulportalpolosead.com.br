@@ -5,21 +5,18 @@ const ObjectionsSection = () => {
   const objections = [
     {
       icon: Award,
-      title: "Validade (Diploma)",
-      description:
-        "Seu diploma é igual ao presencial: Reconhecimento MEC Nota 5 — válido em todo o Brasil.",
+      title: "Reconhecimento",
+      description: "Seu Diploma é igual ao presencial: Reconhecimento MEC Nota 5! Válido em todo o Brasil.",
     },
     {
       icon: DollarSign,
-      title: "Custo (Mensalidade)",
-      description:
-        "Mensalidade fixa, transparência total — parcelas a partir de R$ 89/mês + opções PROUNI/FIES.",
+      title: "Mensalidades",
+      description: "Mensalidade fixa, transparência total, parcelas a partir de R$ 89/mês",
     },
     {
       icon: Clock,
-      title: "Velocidade (Formação)",
-      description:
-        "Formação rápida: certificados semestrais e tecnólogos a partir de 2 anos para entrar no mercado.",
+      title: "Velocidade",
+      description: "Formação rápida: Certificados semestrais e Tecnólogos a partir de 2 anos para entrar no mercado.",
     },
   ];
 
@@ -40,9 +37,7 @@ const ObjectionsSection = () => {
                 <div className="w-16 h-16 rounded-full bg-accent flex items-center justify-center">
                   <objection.icon className="w-8 h-8 text-accent-foreground" />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground">
-                  {objection.title}
-                </h3>
+                <h3 className="text-xl font-semibold text-foreground">{objection.title}</h3>
                 <p className="text-muted-foreground">{objection.description}</p>
               </div>
             </Card>
