@@ -93,103 +93,86 @@ const OfferSection = () => {
   };
   const isUrgent = timeLeft.hours === 0 && timeLeft.minutes < 60;
   return (
-    <section id="oferta" className="relative overflow-hidden">
-      <div className="py-12 md:py-16 bg-gradient-hero text-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-8">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">
-              Aproveite a Maior Campanha de Bolsas para sua Graduação a Distância!
-            </h2>
-            <p className="text-xl text-white/90">Vagas Limitadas • Inscrições Encerram em:</p>
+    <section id="oferta" className="py-12 md:py-16 bg-gradient-hero text-white">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-8">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Aproveite a Maior Campanha de Bolsas para sua Graduação a Distância!
+          </h2>
+          <p className="text-xl text-white/90">Vagas Limitadas • Inscrições Encerram em:</p>
+        </div>
+
+        {/* Countdown Timer */}
+        <div className={`flex justify-center gap-4 mb-8 ${isUrgent ? "animate-pulse" : ""}`}>
+          <div className="bg-accent text-accent-foreground rounded-lg p-4 min-w-[80px] text-center py-[16px] px-[16px]">
+            <div className="text-3xl md:text-4xl font-bold mx-0 my-0 py-0">
+              {String(timeLeft.hours).padStart(2, "0")}
+            </div>
+            <div className="text-sm">Horas</div>
           </div>
-
-          {/* Countdown Timer */}
-          <div className={`flex justify-center gap-4 mb-8 ${isUrgent ? "animate-pulse" : ""}`}>
-            <div className="bg-accent text-accent-foreground rounded-lg p-4 min-w-[80px] text-center py-[16px] px-[16px]">
-              <div className="text-3xl md:text-4xl font-bold mx-0 my-0 py-0">
-                {String(timeLeft.hours).padStart(2, "0")}
-              </div>
-              <div className="text-sm">Horas</div>
-            </div>
-            <div className="bg-accent text-accent-foreground rounded-lg p-4 min-w-[80px] text-center">
-              <div className="text-3xl md:text-4xl font-bold">{String(timeLeft.minutes).padStart(2, "0")}</div>
-              <div className="text-sm">Minutos</div>
-            </div>
-            <div className="bg-accent text-accent-foreground rounded-lg p-4 min-w-[80px] text-center">
-              <div className="text-3xl md:text-4xl font-bold">{String(timeLeft.seconds).padStart(2, "0")}</div>
-              <div className="text-sm">Segundos</div>
-            </div>
+          <div className="bg-accent text-accent-foreground rounded-lg p-4 min-w-[80px] text-center">
+            <div className="text-3xl md:text-4xl font-bold">{String(timeLeft.minutes).padStart(2, "0")}</div>
+            <div className="text-sm">Minutos</div>
           </div>
-
-          <div className="flex justify-center max-w-4xl mx-auto">
-            {/* Benefits Card */}
-            <Card className="p-8 bg-white/10 backdrop-blur-md border-white/20 w-full">
-              <h3 className="text-2xl font-bold mb-6 text-white flex items-center gap-2">
-                <Gift className="w-6 h-6 text-accent" />
-                Bônus Exclusivos Desta Campanha
-              </h3>
-
-              <div className="space-y-4 mb-8">
-                <div className="flex items-start gap-3">
-                  <Sparkles className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="font-semibold text-white">+10 Cursos de IA</p>
-                    <p className="text-sm text-white/80">Aprenda as principais ferramentas de Inteligência Artificial</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <Award className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="font-semibold text-white">+2 Pós-Graduações grátis</p>
-                    <p className="text-sm text-white/80">Continue sua especialização sem custos adicionais</p>
-                  </div>
-                </div>
-
-                <div className="flex items-start gap-3">
-                  <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
-                  <div>
-                    <p className="font-semibold text-white">Certificação intermediária por semestre</p>
-                    <p className="text-sm text-white/80">Valorize seu currículo desde o primeiro semestre</p>
-                  </div>
-                </div>
-              </div>
-
-              {/* Price Highlight */}
-              <div className="bg-accent text-accent-foreground rounded-lg p-6 text-center mb-8">
-                <p className="text-sm mb-2">A partir de</p>
-                <div className="text-4xl font-bold mb-1">R$ 89/mês</div>
-                <p className="text-lg font-semibold">Apenas R$ 3,30 por dia</p>
-              </div>
-              <p className="text-white/90 mb-8">
-                Diversas opções de financiamento e bolsas disponíveis. Consulte nossas condições especiais.
-              </p>
-
-              <Button
-                size="lg"
-                className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-bold text-lg py-6 h-auto animate-pulse-soft"
-                onClick={() => window.open("https://www.fasuleducacional.edu.br", "_blank")}
-              >
-                QUERO MINHA BOLSA
-              </Button>
-            </Card>
+          <div className="bg-accent text-accent-foreground rounded-lg p-4 min-w-[80px] text-center">
+            <div className="text-3xl md:text-4xl font-bold">{String(timeLeft.seconds).padStart(2, "0")}</div>
+            <div className="text-sm">Segundos</div>
           </div>
         </div>
-      </div>
 
-      {/* SVG Wave Bottom */}
-      <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
-        <svg
-          className="relative block w-full h-16 md:h-24 rotate-180"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            className="fill-background"
-          />
-        </svg>
+        <div className="flex justify-center max-w-4xl mx-auto">
+          {/* Benefits Card */}
+          <Card className="p-8 bg-white/10 backdrop-blur-md border-white/20 w-full">
+            <h3 className="text-2xl font-bold mb-6 text-white flex items-center gap-2">
+              <Gift className="w-6 h-6 text-accent" />
+              Bônus Exclusivos Desta Campanha
+            </h3>
+
+            <div className="space-y-4 mb-8">
+              <div className="flex items-start gap-3">
+                <Sparkles className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                <div>
+                  <p className="font-semibold text-white">+10 Cursos de IA</p>
+                  <p className="text-sm text-white/80">Aprenda as principais ferramentas de Inteligência Artificial</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <Award className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                <div>
+                  <p className="font-semibold text-white">+2 Pós-Graduações grátis</p>
+                  <p className="text-sm text-white/80">Continue sua especialização sem custos adicionais</p>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
+                <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
+                <div>
+                  <p className="font-semibold text-white">Certificação intermediária por semestre</p>
+                  <p className="text-sm text-white/80">Valorize seu currículo desde o primeiro semestre</p>
+                </div>
+              </div>
+            </div>
+
+            {/* Price Highlight */}
+            <div className="bg-accent text-accent-foreground rounded-lg p-6 text-center mb-8">
+              <p className="text-sm mb-2">A partir de</p>
+              <div className="text-4xl font-bold mb-1">R$ 89/mês</div>
+              <p className="text-lg font-semibold">Apenas R$ 3,30 por dia</p>
+            </div>
+            <p className="text-white/90 mb-8">
+              Diversas opções de financiamento e bolsas disponíveis. Consulte nossas condições especiais.
+            </p>
+
+            <Button
+              size="lg"
+              className="w-full bg-accent text-accent-foreground hover:bg-accent/90 font-bold text-lg py-6 h-auto animate-pulse-soft"
+              onClick={() => window.open("https://www.fasuleducacional.edu.br", "_blank")}
+            >
+              QUERO MINHA BOLSA
+            </Button>
+          </Card>
+        </div>
       </div>
     </section>
   );
