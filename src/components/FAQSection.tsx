@@ -8,19 +8,9 @@ const FAQSection = () => {
         "Sim. A FASUL possui nota 5 no MEC; o diploma é registrado e válido em todo o Brasil, tendo o mesmo valor de um diploma presencial.",
     },
     {
-      question: "Como funcionam as bolsas e financiamentos (PROUNI/FIES)?",
-      answer:
-        "Oferecemos diversas opções de financiamento: PROUNI (bolsas do governo), FIES (financiamento estudantil) e parcelamento direto pela FASUL. Nossa equipe está pronta para orientar você sobre a melhor opção para seu caso.",
-    },
-    {
       question: "Quando recebo os certificados semestrais?",
       answer:
         "Ao final de cada semestre você pode solicitar o certificado intermediário para incluir no seu currículo. Isso permite que você comece a usar sua formação no mercado de trabalho antes mesmo de concluir o curso.",
-    },
-    {
-      question: "Posso fazer estágio enquanto curso?",
-      answer:
-        "Sim — temos apoio do nosso núcleo de estágios e parcerias com empresas em todo o Brasil. Oferecemos orientação e encaminhamento para vagas de estágio durante todo o seu curso.",
     },
     {
       question: "Os cursos EAD têm a mesma qualidade que os presenciais?",
