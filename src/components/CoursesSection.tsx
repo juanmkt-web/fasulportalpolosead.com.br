@@ -3,6 +3,24 @@ import { Button } from "@/components/ui/button";
 import { ChevronDown } from "lucide-react";
 import CourseCard, { type Course } from "./CourseCard";
 
+// Import course images
+import imgAdministracao from "@/assets/courses/administracao.jpg";
+import imgAnaliseSistemas from "@/assets/courses/analise-sistemas.jpg";
+import imgRecursosHumanos from "@/assets/courses/recursos-humanos.jpg";
+import imgPedagogia from "@/assets/courses/pedagogia.jpg";
+import imgGestaoTI from "@/assets/courses/gestao-ti.jpg";
+import imgNegociosImobiliarios from "@/assets/courses/negocios-imobiliarios.jpg";
+import imgLogistica from "@/assets/courses/logistica.jpg";
+import imgProcessosGerenciais from "@/assets/courses/processos-gerenciais.jpg";
+import imgGestaoMarketing from "@/assets/courses/gestao-marketing.jpg";
+import imgCienciasContabeis from "@/assets/courses/ciencias-contabeis.jpg";
+import imgGestaoComercial from "@/assets/courses/gestao-comercial.jpg";
+import imgSegurancaPublica from "@/assets/courses/seguranca-publica.jpg";
+import imgGestaoPublica from "@/assets/courses/gestao-publica.jpg";
+import imgServicoSocial from "@/assets/courses/servico-social.jpg";
+import imgMarketingDigital from "@/assets/courses/marketing-digital.jpg";
+import imgGestaoFinanceira from "@/assets/courses/gestao-financeira.jpg";
+
 const CoursesSection = () => {
   const [visibleCount, setVisibleCount] = useState(6);
 
@@ -16,7 +34,7 @@ const CoursesSection = () => {
       promoPrice: "R$ 149,90",
       regularPrice: "R$ 299,90",
       badge: "MAIS PROCURADO",
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=300&fit=crop",
+      image: imgAdministracao,
       url: "#oferta"
     },
     {
@@ -28,7 +46,7 @@ const CoursesSection = () => {
       promoPrice: "R$ 149,90",
       regularPrice: "R$ 299,90",
       highlight: "ÁREA DE TI",
-      image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=400&h=300&fit=crop",
+      image: imgAnaliseSistemas,
       url: "#oferta"
     },
     {
@@ -39,7 +57,7 @@ const CoursesSection = () => {
       semesters: "4 Semestres",
       promoPrice: "R$ 149,90",
       regularPrice: "R$ 299,90",
-      image: "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=400&h=300&fit=crop",
+      image: imgRecursosHumanos,
       url: "#oferta"
     },
     {
@@ -51,7 +69,7 @@ const CoursesSection = () => {
       promoPrice: "R$ 149,90",
       regularPrice: "R$ 299,90",
       isLaunchingSoon: true,
-      image: "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&h=300&fit=crop",
+      image: imgPedagogia,
       url: "#oferta"
     },
     {
@@ -63,7 +81,7 @@ const CoursesSection = () => {
       promoPrice: "R$ 149,90",
       regularPrice: "R$ 299,90",
       highlight: "ÁREA DE TI",
-      image: "https://images.unsplash.com/photo-1518770660439-4636190af475?w=400&h=300&fit=crop",
+      image: imgGestaoTI,
       url: "#oferta"
     },
     {
@@ -74,7 +92,7 @@ const CoursesSection = () => {
       semesters: "4 Semestres",
       promoPrice: "R$ 149,90",
       regularPrice: "R$ 299,90",
-      image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=400&h=300&fit=crop",
+      image: imgNegociosImobiliarios,
       url: "#oferta"
     },
     {
@@ -85,7 +103,7 @@ const CoursesSection = () => {
       semesters: "4 Semestres",
       promoPrice: "R$ 149,90",
       regularPrice: "R$ 299,90",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&h=300&fit=crop",
+      image: imgLogistica,
       url: "#oferta"
     },
     {
@@ -96,7 +114,7 @@ const CoursesSection = () => {
       semesters: "4 Semestres",
       promoPrice: "R$ 149,90",
       regularPrice: "R$ 299,90",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
+      image: imgProcessosGerenciais,
       url: "#oferta"
     },
     {
@@ -107,7 +125,7 @@ const CoursesSection = () => {
       semesters: "4 Semestres",
       promoPrice: "R$ 149,90",
       regularPrice: "R$ 299,90",
-      image: "https://images.unsplash.com/photo-1432888622747-4eb9a8efeb07?w=400&h=300&fit=crop",
+      image: imgGestaoMarketing,
       url: "#oferta"
     },
     {
@@ -118,7 +136,7 @@ const CoursesSection = () => {
       semesters: "8 Semestres",
       promoPrice: "R$ 149,90",
       regularPrice: "R$ 299,90",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=300&fit=crop",
+      image: imgCienciasContabeis,
       url: "#oferta"
     },
     {
@@ -129,7 +147,7 @@ const CoursesSection = () => {
       semesters: "4 Semestres",
       promoPrice: "R$ 149,90",
       regularPrice: "R$ 299,90",
-      image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop",
+      image: imgGestaoComercial,
       url: "#oferta"
     },
     {
@@ -140,7 +158,7 @@ const CoursesSection = () => {
       semesters: "4 Semestres",
       promoPrice: "R$ 149,90",
       regularPrice: "R$ 299,90",
-      image: "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=400&h=300&fit=crop",
+      image: imgSegurancaPublica,
       url: "#oferta"
     },
     {
@@ -151,7 +169,7 @@ const CoursesSection = () => {
       semesters: "4 Semestres",
       promoPrice: "R$ 149,90",
       regularPrice: "R$ 299,90",
-      image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=400&h=300&fit=crop",
+      image: imgGestaoPublica,
       url: "#oferta"
     },
     {
@@ -162,7 +180,7 @@ const CoursesSection = () => {
       semesters: "8 Semestres",
       promoPrice: "R$ 149,90",
       regularPrice: "R$ 299,90",
-      image: "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=400&h=300&fit=crop",
+      image: imgServicoSocial,
       url: "#oferta"
     },
     {
@@ -175,7 +193,7 @@ const CoursesSection = () => {
       regularPrice: "R$ 299,90",
       isLaunchingSoon: true,
       highlight: "NOVIDADE",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=300&fit=crop",
+      image: imgMarketingDigital,
       url: "#oferta"
     },
     {
@@ -186,7 +204,7 @@ const CoursesSection = () => {
       semesters: "4 Semestres",
       promoPrice: "R$ 149,90",
       regularPrice: "R$ 299,90",
-      image: "https://images.unsplash.com/photo-1579621970563-ebec7560ff3e?w=400&h=300&fit=crop",
+      image: imgGestaoFinanceira,
       url: "#oferta"
     }
   ];
