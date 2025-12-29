@@ -146,13 +146,6 @@ const OfferSection = () => {
               </div>
 
               <div className="flex items-start gap-3">
-                <Zap className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
-                <div>
-                  <p className="text-sm text-white/80">Ferramentas profissionais à sua disposição</p>
-                </div>
-              </div>
-
-              <div className="flex items-start gap-3">
                 <CheckCircle2 className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                 <div>
                   <p className="font-semibold text-white">Certificação intermediária por semestre</p>
