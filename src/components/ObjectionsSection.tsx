@@ -21,9 +21,9 @@ const ObjectionsSection = () => {
   ];
 
   return (
-    <section id="como-funciona" className="py-16 md:py-24 bg-background">
+    <section id="como-funciona" className="py-12 md:py-16 bg-background">
       <div className="container mx-auto px-4">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-foreground">
           O Diploma da sua Graduação a Distância é Válido e Reconhecido pelo MEC?
         </h2>
 

@@ -233,10 +233,10 @@ const CoursesSection = () => {
         </svg>
       </div>
 
-      <div className="gradient-animated py-20 md:py-28">
+      <div className="gradient-animated py-14 md:py-20">
         <div className="container mx-auto px-4">
           {/* Header */}
-          <div className="text-center mb-12">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4">
               ESCOLHA SUA GRADUAÇÃO
             </h2>
@@ -254,7 +254,7 @@ const CoursesSection = () => {
 
           {/* Botão Ver Mais */}
           {hasMore && (
-            <div className="text-center mt-12">
+            <div className="text-center mt-8">
               <Button
                 onClick={handleShowMore}
                 size="lg"

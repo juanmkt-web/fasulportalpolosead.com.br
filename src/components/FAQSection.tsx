@@ -25,9 +25,9 @@ const FAQSection = () => {
   ];
 
   return (
-    <section id="faq" className="py-16 md:py-24 bg-background">
+    <section id="faq" className="py-12 md:py-16 bg-background">
       <div className="container mx-auto px-4 max-w-4xl">
-        <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-foreground">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-foreground">
           Perguntas Frequentes sobre a Graduação EAD na FASUL
         </h2>
 
