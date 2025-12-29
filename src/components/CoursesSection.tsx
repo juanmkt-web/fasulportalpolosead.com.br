@@ -253,10 +253,10 @@ const CoursesSection = () => {
           {/* Botão Ver Mais */}
           {hasMore && (
             <div className="text-center mt-8">
-              <Button
+            <Button
                 onClick={handleShowMore}
                 size="lg"
-                className="bg-white text-primary hover:bg-white/90 font-bold px-8 py-6 text-lg gap-2"
+                className="bg-accent hover:bg-accent/90 text-white font-bold px-8 py-6 text-lg gap-2"
               >
                 VER MAIS CURSOS
                 <ChevronDown className="w-5 h-5" />
