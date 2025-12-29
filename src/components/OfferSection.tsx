@@ -148,7 +148,6 @@ const OfferSection = () => {
               <div className="flex items-start gap-3">
                 <Zap className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                 <div>
-                  <p className="font-semibold text-white">Acesso ilimitado ao laboratório de IAs premium</p>
                   <p className="text-sm text-white/80">Ferramentas profissionais à sua disposição</p>
                 </div>
               </div>
