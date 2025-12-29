@@ -49,9 +49,9 @@ const CourseCard = ({ course, index }: CourseCardProps) => {
         </div>
         
         {/* Promo Badge - Bottom of image */}
-        <div className="absolute bottom-0 left-0 right-0 flex justify-center pb-3">
-          <div className="bg-gradient-to-r from-amber-400 to-orange-500 text-white text-[10px] md:text-xs font-bold px-3 py-2 rounded-full flex items-center gap-1.5 shadow-lg">
-            <Gift className="w-3.5 h-3.5" />
+        <div className="absolute bottom-2 left-2 right-2 flex justify-center">
+          <div className="bg-gradient-to-r from-amber-400 to-orange-500 text-white text-[9px] md:text-[10px] font-bold px-2.5 py-1.5 rounded-full flex items-center gap-1 shadow-lg">
+            <Gift className="w-3 h-3" />
             <span>GANHE 2 PÓS PARA VOCÊ + 1 PARA SEU AMIGO</span>
           </div>
         </div>
