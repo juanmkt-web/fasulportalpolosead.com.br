@@ -28,7 +28,8 @@ const HeroSection = () => {
           {/* Conteúdo centralizado */}
           <div className="text-white space-y-8 text-center">
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight animate-reveal-left">
-              Realize o seu sonho de uma Graduação por apenas <span className="text-accent">R$89,00 por mês</span> até o final do curso
+              Realize o seu sonho de uma Graduação por apenas <span className="text-accent">R$89,00 por mês</span> até o
+              final do curso
             </h1>
 
             <p className="text-lg md:text-xl lg:text-2xl text-white/90 animate-fade-in max-w-3xl mx-auto">
@@ -61,9 +62,7 @@ const HeroSection = () => {
               >
                 GARANTIR MINHA BOLSA AGORA!
               </Button>
-              <p className="text-sm text-white/80 mt-4">
-                Vagas LIMITADAS • Aceitamos PROUNI e FIES • Parcelamento FASUL
-              </p>
+              <p className="text-sm text-white/80 mt-4">Vagas LIMITADAS • Parcelamento FASUL</p>
             </div>
           </div>
         </div>
