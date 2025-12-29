@@ -167,8 +167,6 @@ const OfferSection = () => {
               <div className="text-4xl font-bold mb-1">R$ 89/mês</div>
               <p className="text-lg font-semibold">Apenas R$ 3,30 por dia</p>
             </div>
-
-            <h3 className="text-xl font-bold mb-4 text-white"></h3>
             <p className="text-white/90 mb-8">
               Diversas opções de financiamento e bolsas disponíveis. Consulte nossas condições especiais.
             </p>
