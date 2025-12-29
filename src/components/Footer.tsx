@@ -1,4 +1,37 @@
+import { useEffect } from 'react';
+
 const Footer = () => {
+  useEffect(() => {
+    // Load Reclame Aqui reputation script
+    const raReputationScript = document.createElement('script');
+    raReputationScript.src = 'https://s3.amazonaws.com/raichu-beta/selos/bundle.js';
+    raReputationScript.id = 'ra-embed-reputation';
+    raReputationScript.defer = true;
+    raReputationScript.setAttribute('data-id', 'cDd6eDZOQ09hVFdfM0pjcDpmYXN1bG1nLWZhY3VsZGFkZS1zdWxtaW5laXJh');
+    raReputationScript.setAttribute('data-target', 'reputation-ra');
+    raReputationScript.setAttribute('data-model', '2');
+    
+    // Load Reclame Aqui verified seal script
+    const raVerifiedScript = document.createElement('script');
+    raVerifiedScript.src = 'https://s3.amazonaws.com/raichu-beta/ra-verified/bundle.js';
+    raVerifiedScript.id = 'ra-embed-verified-seal';
+    raVerifiedScript.defer = true;
+    raVerifiedScript.setAttribute('data-id', 'cDd6eDZOQ09hVFdfM0pjcDpmYXN1bG1nLWZhY3VsZGFkZS1zdWxtaW5laXJh');
+    raVerifiedScript.setAttribute('data-target', 'ra-verified-seal');
+    raVerifiedScript.setAttribute('data-model', '2');
+
+    document.body.appendChild(raReputationScript);
+    document.body.appendChild(raVerifiedScript);
+
+    return () => {
+      // Cleanup scripts on unmount
+      const existingReputation = document.getElementById('ra-embed-reputation');
+      const existingVerified = document.getElementById('ra-embed-verified-seal');
+      if (existingReputation) existingReputation.remove();
+      if (existingVerified) existingVerified.remove();
+    };
+  }, []);
+
   return (
     <footer className="footer-main">
       {/* Footer Links */}
@@ -154,27 +187,9 @@ const Footer = () => {
               <li className="lirodape"><a className="atxtrodape" href="https://www.fasuleducacional.edu.br/docs/regulamento-certificacao-intermediaria.pdf" target="_blank">Regulamento Certificação Intermediária</a></li>
             </ul>
             <h2 className="tituloRodape mt-6 pt-2">Reclame Aqui</h2>
-            <div id="reputation-ra" className="flex flex-row gap-1 items-center pb-4">
-              <script
-                defer
-                type="text/javascript"
-                id="ra-embed-reputation"
-                src="https://s3.amazonaws.com/raichu-beta/selos/bundle.js"
-                data-id="cDd6eDZOQ09hVFdfM0pjcDpmYXN1bG1nLWZhY3VsZGFkZS1zdWxtaW5laXJh"
-                data-target="reputation-ra"
-                data-model="2"
-              />
-              <div id="ra-verified-seal">
-                <script
-                  defer
-                  type="text/javascript"
-                  id="ra-embed-verified-seal"
-                  src="https://s3.amazonaws.com/raichu-beta/ra-verified/bundle.js"
-                  data-id="cDd6eDZOQ09hVFdfM0pjcDpmYXN1bG1nLWZhY3VsZGFkZS1zdWxtaW5laXJh"
-                  data-target="ra-verified-seal"
-                  data-model="2"
-                />
-              </div>
+            <div className="flex flex-row gap-1 items-center pb-4">
+              <div id="reputation-ra"></div>
+              <div id="ra-verified-seal"></div>
             </div>
             <div className="mt-5">
               <p className="text-footer-acreditamos m-0">Nós Acreditamos em Deus</p>
