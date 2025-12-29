@@ -601,9 +601,40 @@ All colors MUST be HSL.
 
 @media (min-width: 1900px) {
   .footer-contact {
-    background-image: url('/images/background-rodape-contato.webp');
+    background-image: url('/images/background-rodape-contato2.webp');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+  }
+}
+
+/* Footer Copyright */
+.footer-copy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  padding: 20px;
+  background-color: #0a1835;
+  color: #fff;
+  font-size: 12px;
+  text-align: center;
+  flex-wrap: wrap;
+}
+
+.footer-copy a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-copy a:hover {
+  color: #0fe;
+}
+
+@media (max-width: 576px) {
+  .footer-copy {
+    flex-direction: column;
+    gap: 12px;
   }
 }
