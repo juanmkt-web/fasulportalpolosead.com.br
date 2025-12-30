@@ -619,12 +619,18 @@ All colors MUST be HSL.
   justify-content: space-between;
   align-items: center;
   gap: 24px;
-  padding: 20px 40px;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 20px 15px;
   background-color: #0a1835;
   color: #fff;
   font-size: 12px;
   text-align: center;
   flex-wrap: wrap;
+}
+
+.footer-copy-wrapper {
+  background-color: #0a1835;
 }
 
 .footer-copy a {
