@@ -644,11 +644,13 @@ const Footer = () => {
       </section>
 
       {/* Copyright */}
-      <div className="footer-copy">
-        <span>COPYRIGHT © 1997-2025 - FASUL. TODOS OS DIREITOS RESERVADOS.</span>
-        <a href="https://www.fasuleducacional.edu.br/politica-de-privacidade" target="_blank" rel="noopener noreferrer">
-          Política de privacidade
-        </a>
+      <div className="footer-copy-wrapper">
+        <div className="footer-copy">
+          <span>COPYRIGHT © 1997-2025 - FASUL. TODOS OS DIREITOS RESERVADOS.</span>
+          <a href="https://www.fasuleducacional.edu.br/politica-de-privacidade" target="_blank" rel="noopener noreferrer">
+            Política de privacidade
+          </a>
+        </div>
       </div>
     </footer>
   );
