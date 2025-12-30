@@ -33,14 +33,23 @@ const FAQSection = () => {
           viewBox="0 0 1200 120"
           preserveAspectRatio="none"
         >
+          <defs>
+            {/* Match OfferSection (bg-gradient-hero) exactly */}
+            <linearGradient id="faqWaveGradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1200" y2="120">
+              <stop offset="0%" stopColor="hsl(var(--hero-0))" />
+              <stop offset="50%" stopColor="hsl(var(--hero-50))" />
+              <stop offset="100%" stopColor="hsl(var(--hero-100))" />
+            </linearGradient>
+          </defs>
+
           <path
             d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            fill="hsl(210, 60%, 22%)"
+            fill="url(#faqWaveGradient)"
           />
         </svg>
       </div>
 
-      <div className="py-14 md:py-20" style={{ background: 'linear-gradient(to bottom right, #192F45, #0066cc)' }}>
+      <div className="py-14 md:py-20 bg-gradient-hero">
         <div className="container mx-auto px-4 max-w-4xl">
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">
             Perguntas Frequentes sobre a Graduação EAD na FASUL
