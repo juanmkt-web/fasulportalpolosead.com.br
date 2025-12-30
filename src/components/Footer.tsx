@@ -29,6 +29,12 @@ const Footer = () => {
       const existingVerified = document.getElementById("ra-embed-verified-seal");
       if (existingReputation) existingReputation.remove();
       if (existingVerified) existingVerified.remove();
+      
+      // Clear widget containers to prevent duplicates on re-mount
+      const reputationTarget = document.getElementById("reputation-ra");
+      const verifiedTarget = document.getElementById("ra-verified-seal");
+      if (reputationTarget) reputationTarget.innerHTML = "";
+      if (verifiedTarget) verifiedTarget.innerHTML = "";
     };
   }, []);
 
