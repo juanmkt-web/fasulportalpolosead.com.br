@@ -416,8 +416,8 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-            <h2 className="tituloRodape mt-6 pt-2">Reclame Aqui</h2>
-            <div className="flex flex-row gap-1 items-center pb-4">
+            <h2 className="tituloRodape mt-6">Reclame Aqui</h2>
+            <div className="flex flex-row gap-1 items-center pt-3 pb-1">
               <div id="reputation-ra"></div>
               <div id="ra-verified-seal"></div>
             </div>
