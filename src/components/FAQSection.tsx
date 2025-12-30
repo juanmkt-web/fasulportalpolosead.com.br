@@ -25,66 +25,41 @@ const FAQSection = () => {
   ];
 
   return (
-    <section id="faq" className="relative overflow-hidden">
-      <div className="absolute top-0 left-0 w-full overflow-hidden leading-none rotate-180">
-        <svg
-          className="relative block w-full h-16 md:h-24 rotate-180"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 0 1200 120"
-          preserveAspectRatio="none"
-        >
-          <defs>
-            {/* Match OfferSection (bg-gradient-hero) exactly */}
-            <linearGradient id="faqWaveGradient" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1200" y2="120">
-              <stop offset="0%" stopColor="hsl(var(--hero-0))" />
-              <stop offset="50%" stopColor="hsl(var(--hero-50))" />
-              <stop offset="100%" stopColor="hsl(var(--hero-100))" />
-            </linearGradient>
-          </defs>
+    <section id="faq" className="bg-gradient-hero py-14 md:py-20">
+      <div className="container mx-auto px-4 max-w-4xl">
+        <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">
+          Perguntas Frequentes sobre a Graduação EAD na FASUL
+        </h2>
 
-          <path
-            d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
-            fill="url(#faqWaveGradient)"
-          />
-        </svg>
-      </div>
+        <Accordion type="single" collapsible className="space-y-4">
+          {faqs.map((faq, index) => (
+            <AccordionItem key={index} value={`item-${index}`} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg px-6">
+              <AccordionTrigger className="text-left font-semibold text-white hover:text-white/80">
+                {faq.question}
+              </AccordionTrigger>
+              <AccordionContent className="text-white/80">{faq.answer}</AccordionContent>
+            </AccordionItem>
+          ))}
+        </Accordion>
 
-      <div className="py-14 md:py-20 bg-gradient-hero">
-        <div className="container mx-auto px-4 max-w-4xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 text-white">
-            Perguntas Frequentes sobre a Graduação EAD na FASUL
-          </h2>
-
-          <Accordion type="single" collapsible className="space-y-4">
-            {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="bg-white/10 backdrop-blur-sm border border-white/20 rounded-lg px-6">
-                <AccordionTrigger className="text-left font-semibold text-white hover:text-white/80">
-                  {faq.question}
-                </AccordionTrigger>
-                <AccordionContent className="text-white/80">{faq.answer}</AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-
-          {/* JSON-LD Schema */}
-          <script
-            type="application/ld+json"
-            dangerouslySetInnerHTML={{
-              __html: JSON.stringify({
-                "@context": "https://schema.org",
-                "@type": "FAQPage",
-                mainEntity: faqs.map((faq) => ({
-                  "@type": "Question",
-                  name: faq.question,
-                  acceptedAnswer: {
-                    "@type": "Answer",
-                    text: faq.answer,
-                  },
-                })),
-              }),
-            }}
-          />
-        </div>
+        {/* JSON-LD Schema */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              mainEntity: faqs.map((faq) => ({
+                "@type": "Question",
+                name: faq.question,
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: faq.answer,
+                },
+              })),
+            }),
+          }}
+        />
       </div>
     </section>
   );
