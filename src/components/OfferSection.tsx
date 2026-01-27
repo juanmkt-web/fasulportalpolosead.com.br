@@ -140,7 +140,7 @@ const OfferSection = () => {
               <div className="flex items-start gap-3">
                 <Award className="w-6 h-6 text-accent flex-shrink-0 mt-1" />
                 <div>
-                  <p className="font-semibold text-white">+2 Pós-Graduações grátis</p>
+                  <p className="font-semibold text-white">+3 Pós-Graduações grátis</p>
                   <p className="text-sm text-white/80">Continue sua especialização sem custos adicionais</p>
                 </div>
               </div>
@@ -158,7 +158,7 @@ const OfferSection = () => {
             <div className="bg-accent text-accent-foreground rounded-lg p-6 text-center mb-8">
               <p className="text-sm mb-2">A partir de</p>
               <div className="text-4xl font-bold mb-1">R$ 89/mês</div>
-              <p className="text-lg font-semibold">Apenas R$ 3,30 por dia</p>
+              <p className="text-lg font-semibold">Apenas R$ 2,87 por dia</p>
             </div>
             <p className="text-white/90 mb-8">
               Diversas opções de financiamento e bolsas disponíveis. Consulte nossas condições especiais.
