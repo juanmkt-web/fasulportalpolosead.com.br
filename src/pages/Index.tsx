@@ -4,8 +4,10 @@ import ObjectionsSection from "@/components/ObjectionsSection";
 import CoursesSection from "@/components/CoursesSection";
 import SocialProofSection from "@/components/SocialProofSection";
 import OfferSection from "@/components/OfferSection";
-import FAQSection from "@/components/FAQSection";
 import Footer from "@/components/Footer";
+import Faculty from "@/components/Faculty";
+import Blog from "@/components/Blog";
+import FAQ from "@/components/FAQ";
 const Index = () => {
   return <div className="min-h-screen">
       <Header />
@@ -15,7 +17,9 @@ const Index = () => {
         <CoursesSection />
         <SocialProofSection />
         <OfferSection />
-        <FAQSection />
+        <Faculty />
+        <Blog />
+        <FAQ />
       </main>
       <Footer />
     </div>;
