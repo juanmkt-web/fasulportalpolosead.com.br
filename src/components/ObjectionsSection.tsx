@@ -11,7 +11,7 @@ const ObjectionsSection = () => {
     {
       icon: DollarSign,
       title: "Mensalidades",
-      description: "Mensalidade fixa, transparência total, parcelas a partir de R$ 89/mês",
+      description: "Mensalidade fixa, transparência total, parcelas a partir de R$ 139/mês",
     },
     {
       icon: Clock,

@@ -28,7 +28,7 @@ const HeroSection = () => {
           {/* Conteúdo centralizado */}
           <div className="text-white space-y-8 text-center">
             <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold leading-tight animate-reveal-left">
-              Realize o seu sonho de uma Graduação por apenas <span className="text-accent">R$89,00 por mês</span> até o
+              Realize o seu sonho de uma Graduação por apenas <span className="text-accent">R$ 139,00 por mês</span> até o
               final do curso
             </h1>
 
